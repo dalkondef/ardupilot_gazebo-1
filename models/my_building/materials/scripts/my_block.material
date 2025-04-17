@@ -1,0 +1,13 @@
+material my_building/MyTexture
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture my_window.png
+      }
+    }
+  }
+}

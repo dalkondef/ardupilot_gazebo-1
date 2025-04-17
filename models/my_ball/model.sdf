@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="my_ball">
+    <static>false</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+
+    <material>
+      <script>
+        <uri>model://my_ball/materials/scripts</uri>
+
+        <name>Gazebo/WoodFloor</name>
+      </script>
+    </material>
+
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
